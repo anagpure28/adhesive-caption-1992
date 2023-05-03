@@ -27,7 +27,14 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box style={{
+      // overflow: "hidden",
+      backgroundColor: "#333",
+      position: "fixed",
+      top: "0",
+      width: "100%",
+      zIndex: "3"
+    }}>
       <Flex
         bg={useColorModeValue("black", "gray.900")}
         color={useColorModeValue("gray.600", "gray")}
@@ -53,15 +60,16 @@ export default function WithSubnavigation() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
+        <Flex px={3} flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+          {/* <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("white")}
           >
             Logo
-          </Text>
-          {/* <Image src='../src/Images/brain.png' alt='logo' /> */}
+          </Text> */}
+          <Box w={40}>
+          </Box>
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -126,7 +134,7 @@ const DesktopNav = () => {
                 color={linkColor}
                 _hover={{
                   textDecoration: "none",
-                  borderBottom: "5px solid yellow",
+                  borderBottom: "4px solid yellow",
                   color: linkHoverColor,
                 }}
               >
@@ -267,59 +275,59 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "HOME",
-    href: "#",
+    href: "/",
   },
   {
     label: "ABOUT",
-    href: "#",
+    href: "/about",
   },
   {
     label: "BLOG",
-    href: "#",
+    href: "/blog",
   },
   {
     label: "RESOURCES🔻",
     children: [
       {
         label: "EMERGENCY NUMBERS",
-        href: "#",
+        href: "/emergency",
       },
       {
         label: "MENTAL HEALTH EXPLAINED",
-        href: "#",
+        href: "/mental-health",
       },
       {
         label: "PRESCRIPTION INFORMATION",
-        href: "#",
+        href: "/prescription",
       },
       {
         label: "RELAXATION MUSIC",
-        href: "#",
+        href: "/relax-music",
       },
       {
         label: "NATURE SOUNDS WITH VIDEOS",
-        href: "#",
+        href: "nature-sound",
       },
       {
         label: "GUIDED MEDITATION",
-        href: "#",
+        href: "guide",
       },
       {
         label: "AUDIO STORIES",
-        href: "#",
+        href: "audio",
       },
     ],
   },
   {
     label: "FAQ",
-    href: "#",
+    href: "/faq",
   },
   {
     label: "CONTACT",
-    href: "#",
+    href: "/contact",
   },
   {
     label: "PRIVACY",
-    href: "#",
+    href: "/privacy",
   },
 ];
