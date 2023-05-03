@@ -13,6 +13,7 @@ import {
   PopoverContent,
   useColorModeValue,
   useBreakpointValue,
+  Image,
   useDisclosure,
 } from "@chakra-ui/react";
 import {
@@ -28,7 +29,7 @@ export default function WithSubnavigation() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("black", "black.800")}
+        bg={useColorModeValue("black", "gray.900")}
         color={useColorModeValue("gray.600", "gray")}
         minH={"60px"}
         py={{ base: 4 }}
@@ -60,7 +61,7 @@ export default function WithSubnavigation() {
           >
             Logo
           </Text>
-
+          {/* <Image src='../src/Images/brain.png' alt='logo' /> */}
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
@@ -197,8 +198,8 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("black", "gray.800")}
-      color={useColorModeValue("white.600", "white.200")}
+      bg={useColorModeValue("black", "gray.900")}
+      color={useColorModeValue("white", "white")}
       p={4}
       display={{ md: "none" }}
     >
