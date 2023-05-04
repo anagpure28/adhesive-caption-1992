@@ -16,6 +16,7 @@ import {
   Image,
   useDisclosure,
 } from "@chakra-ui/react";
+import brain from "../Images/brain.png"
 import {
   HamburgerIcon,
   CloseIcon,
@@ -30,7 +31,7 @@ export default function WithSubnavigation() {
     <Box style={{
       // overflow: "hidden",
       backgroundColor: "#333",
-      position: "fixed",
+      position: "sticky",
       top: "0",
       width: "100%",
       zIndex: "3"
@@ -61,14 +62,8 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex px={3} flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          {/* <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("white")}
-          >
-            Logo
-          </Text> */}
           <Box w={40}>
+            <Image src={brain}/>
           </Box>
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
