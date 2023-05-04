@@ -49,7 +49,7 @@ import {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Stack direction={'row'} spacing={6}>
+          <Stack direction={'row'} spacing={3}>
             <SocialButton label={'Facebook'} href={'#'}>
               <FaTwitter />
             </SocialButton>
