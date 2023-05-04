@@ -1,6 +1,7 @@
 import React from "react";
-import { FeatureStory, GridList } from "../list_cards/FeatureStory";
+import { FeatureStory } from "../list_cards/FeatureStory";
 import Carousel from "../list_cards/Carousel";
+import Carousel2 from "../list_cards/Carousel2";
 
 export const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ export const HomePage = () => {
       </div>
       <Carousel />
       <FeatureStory />
+      <Carousel2 />
     </div>
   );
 };

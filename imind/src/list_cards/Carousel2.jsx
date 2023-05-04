@@ -9,15 +9,11 @@ import Slider from 'react-slick';
 const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 3000,
-    cssEase: "linear"
+    slidesToShow: 3,
+    slidesToScroll: 3,
 };
 
-export default function Carousel() {
+export default function Carousel2() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState(null);
@@ -29,22 +25,25 @@ export default function Carousel() {
 
   // These are the images used in the slide
   const cards = [
-    "https://cdn.who.int/media/images/default-source/imported/adolescents-mental-health.tmb-1920v.jpg?sfvrsn=c6b21ab0_25",
-    "https://probonoaustralia.com.au/wp-content/uploads/2016/06/mental-health-young-girl-head-on-hands-RS.jpg",
-    "https://static.toiimg.com/photo/61017464.cms",
-    "https://images.indianexpress.com/2018/10/depression-getty-images-759.jpg",
-    "https://annenberg.usc.edu/sites/default/files/styles/article_full_content_1240x600/public/iStock-815784448%20%281%29.jpg?itok=E1HRQfAA",
-    "https://img.mensxp.com/media/content/2020/Oct/Things-Not-To-Say-To-Someone-Suffering-From-Mental-Health-Issues1400_5f82fa9999ba9.jpeg?w=820&h=540&cc=1",
-    "https://www.shutterstock.com/shutterstock/videos/1058150641/thumb/1.jpg?ip=x480",
-    "https://media.istockphoto.com/id/650326960/photo/man-leaning-hands-against-wall.jpg?s=612x612&w=0&k=20&c=phnNsRaQh1XJ5bQI5n_mRbVJJJRLLkSSP_KsItKjl1g="
+    "https://cdn.dribbble.com/users/2302565/screenshots/6630253/jakehawkins.gif",
+    "https://media.tenor.com/ZjG74RD4xXAAAAAM/mental-health-mental-health-action-day.gif",
+    "https://media0.giphy.com/media/wPbZpEPgOjOhVlD0XA/giphy.gif",
+    "https://media.tenor.com/ybn86nLN5mAAAAAC/brain-mental.gif",
+    "https://i0.wp.com/media1.giphy.com/media/JPgvXZhEvC434iZMCP/giphy.gif?resize=480%2C480&ssl=1",
+    "https://cdn.dribbble.com/users/1060375/screenshots/5448294/ezgif.com-optimize.gif",
+    "https://i.gifer.com/origin/b0/b087cde09dd5f3c05f5ba71cdbd08850.gif",
+    "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/efa41d71503887.5bc7a3379e618.gif",
+    "https://media.tenor.com/Rrdk8Q_-xncAAAAM/im_lauren_jacobs-mental-illness-is-not-a-personal-failure.gif",
   ];
 
   return (
     <Box
       position={'relative'}
-      width={'100%'}
+      width={'96%'}
+      height="330px"
+      borderRadius={10}
       m={"auto"}
-      mt={1}
+      mt={6}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
@@ -89,16 +88,9 @@ export default function Carousel() {
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
-          <Box
-            key={index}
-            // w={100}
-            h={400}
-            position="relative"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            backgroundImage={`url(${url})`}
-          />
+          <Box width="100%">
+            <img src={url} alt="" width="100%"/>
+          </Box>
         ))}
       </Slider>
     </Box>
