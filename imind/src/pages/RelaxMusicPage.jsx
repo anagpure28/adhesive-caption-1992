@@ -114,12 +114,13 @@ const RelaxMusicPage = () => {
               to be explored.
             </Text>
             <BlogAuthor
-              name="Aniket Nagpure"
+              name="Snehal Sharma"
               date={new Date("2023-08-05T19:01:27Z")}
             />
           </Box>
         </Box>
-        <Heading as="h2" marginTop="5">
+        <br /><br />
+        <Heading as="h2" mt={5}>
           Latest articles
         </Heading>
         <Divider marginTop="5" />
@@ -159,7 +160,7 @@ const RelaxMusicPage = () => {
                 stress, fear, anxiety, worry, etc.
               </Text>
               <BlogAuthor
-                name="Ritesh Raut"
+                name="Priya kumari"
                 date={new Date("2023-08-05T19:01:27Z")}
               />
             </Box>
