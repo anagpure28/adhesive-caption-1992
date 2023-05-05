@@ -19,13 +19,11 @@ const colorsTheme = ["#fce505", "#242424", "#fcfcfc"];
 
 const SingleBlogPage = () => {
   const [loading, setLoading] = useState(false);
-  //   const { colorMode } = useColorMode();
   const [like, setLike] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const playerRef = useRef(null);
   const [apiResponse, setApiResponse] = useState([]);
   const { id } = useParams();
-  //   console.log(id);
   useEffect(() => {
     window.scrollTo(0, 0);
     setLoading(true);

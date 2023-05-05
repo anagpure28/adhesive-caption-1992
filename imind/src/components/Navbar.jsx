@@ -284,8 +284,8 @@ const NAV_ITEMS = [
     label: "RESOURCES🔻",
     children: [
       {
-        label: "EMERGENCY NUMBERS",
-        href: "/emergency",
+        label: "PREMIUM OFFERS",
+        href: "/Premium",
       },
       {
         label: "MENTAL HEALTH EXPLAINED",
@@ -301,15 +301,15 @@ const NAV_ITEMS = [
       },
       {
         label: "NATURE SOUNDS WITH VIDEOS",
-        href: "nature-sound",
+        href: "/nature-sound",
       },
       {
         label: "GUIDED MEDITATION",
-        href: "guide",
+        href: "/guide",
       },
       {
         label: "AUDIO STORIES",
-        href: "audio",
+        href: "/audio",
       },
     ],
   },

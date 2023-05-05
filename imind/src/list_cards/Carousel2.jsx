@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
@@ -13,37 +13,26 @@ const settings = {
     slidesToScroll: 3,
 };
 
-export default function Carousel2() {
+export default function Carousel2({data, title}) {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState(null);
-
+  const [cards] = useState(data)
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
   const top = useBreakpointValue({ base: '90%', md: '50%' });
   const side = useBreakpointValue({ base: '30%', md: '10px' });
 
-  // These are the images used in the slide
-  const cards = [
-    "https://cdn.dribbble.com/users/2302565/screenshots/6630253/jakehawkins.gif",
-    "https://media.tenor.com/ZjG74RD4xXAAAAAM/mental-health-mental-health-action-day.gif",
-    "https://media0.giphy.com/media/wPbZpEPgOjOhVlD0XA/giphy.gif",
-    "https://media.tenor.com/ybn86nLN5mAAAAAC/brain-mental.gif",
-    "https://i0.wp.com/media1.giphy.com/media/JPgvXZhEvC434iZMCP/giphy.gif?resize=480%2C480&ssl=1",
-    "https://cdn.dribbble.com/users/1060375/screenshots/5448294/ezgif.com-optimize.gif",
-    "https://i.gifer.com/origin/b0/b087cde09dd5f3c05f5ba71cdbd08850.gif",
-    "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/efa41d71503887.5bc7a3379e618.gif",
-    "https://media.tenor.com/Rrdk8Q_-xncAAAAM/im_lauren_jacobs-mental-illness-is-not-a-personal-failure.gif",
-  ];
-
   return (
+    <div>
+      <p style={{textAlign: "left", margin: "1% 0 1% 5%", fontSize: "25px", fontWeight: "600"}}>{title}</p>
     <Box
       position={'relative'}
       width={'96%'}
       height="330px"
       borderRadius={10}
       m={"auto"}
-      mt={6}
+      mb={6}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
@@ -94,5 +83,6 @@ export default function Carousel2() {
         ))}
       </Slider>
     </Box>
+    </div>
   );
 }
