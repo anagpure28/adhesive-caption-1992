@@ -1,0 +1,7 @@
+.vjs-poster {
+    border-radius: 10px;
+}
+
+.video-js .vjs-big-play-button {
+    background-color: red !important;
+}
