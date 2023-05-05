@@ -284,8 +284,8 @@ const NAV_ITEMS = [
     label: "RESOURCES🔻",
     children: [
       {
-        label: "EMERGENCY NUMBERS",
-        href: "/emergency",
+        label: "PREMIUM OFFERS",
+        href: "/Premium",
       },
       {
         label: "MENTAL HEALTH EXPLAINED",

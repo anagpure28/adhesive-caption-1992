@@ -117,7 +117,7 @@ export const NatureArr2 = [
     {
       id: 3,
       image: "https://musicofnature.com/wp-content/uploads/2021/06/IMG_3144-Santa-Elena-at-dawn-with-Reeds-2100X1400-for-blog-post-400x250.jpg",
-      text: "Gusty wind blows through a dense thicket of stiff reeds, producing a plethora of snaps, crackles and pops. Frolicking ravens croak repeatedly as they fly up and down the Rio Grande River",
+      text: "Gusty wind blows through a dense thicket of stiff reeds, producing a plethora of snaps, crackles and pops.",
       link: "https://musicofnature.com/wind-ravens-reeds/"
     },
     {

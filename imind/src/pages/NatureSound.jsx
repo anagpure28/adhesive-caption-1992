@@ -9,69 +9,6 @@ import { NatureArr1, NatureArr2, cards3, cards4 } from "../data_Arrays/data";
 import ReactPlayer from "react-player"
 import { FeatureStory } from "../list_cards/FeatureStory";
 
-const itemData = [
-  {
-    img: "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e",
-    title: "Breakfast",
-    author: "@bkristastucchio",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-    author: "@rollelflex_graphy726",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-    author: "@helloimnik",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    title: "Coffee",
-    author: "@nolanissac",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
-    author: "@hjrc33",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    title: "Honey",
-    author: "@arwinneil",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
-    title: "Basketball",
-    author: "@tjdragotta",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
-    title: "Fern",
-    author: "@katie_wasserman",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
-    title: "Mushrooms",
-    author: "@silverdalex",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-    title: "Tomato basil",
-    author: "@shelleypauls",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-    title: "Sea star",
-    author: "@peterlaster",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-    title: "Bike",
-    author: "@southside_customs",
-  },
-];
-
 export const NatureSound = () => {
   const videoSrc1 = N1;
   const poster1 =
@@ -85,23 +22,37 @@ export const NatureSound = () => {
 
   return (
     <div>
-      <div>
+      <p
+        style={{
+          textAlign: "left",
+          margin: "2% 5%",
+          fontSize: "30px",
+          fontWeight: "700",
+          borderBottom: "1px solid black"
+        }}
+      >Nature Sounds with Videos
+      </p>
+      <div style={{width: "70%", margin: "15px auto"}}>
         <img
-          src="https://wallpapers.com/images/featured/2ygv7ssy2k0lxlzu.jpg"
+          src="https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHx8fDE2ODMyNjk1MDc&ixlib=rb-4.0.3&q=85"
           alt=""
+          width="100%"
         />
+      {/* <ReactPlayer controls url="https://youtu.be/0B7i8GeNKVY" width="100%"/> */}
       </div>
+
       {/* Video-1 */}
       <div
         style={{
-          margin: "50px 50px",
+          width: "80%",
+          margin: "50px auto",
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
+          // border: "1px solid black"
         }}
-        data-aos="fade-down-right"
       >
-        <div>
+        <div data-aos="fade-down-right">
           <VideoPlayer
             src={videoSrc1}
             poster={poster1}
@@ -110,7 +61,7 @@ export const NatureSound = () => {
             playbackRates={[-0.5, 1, 1.5, 2]}
           />
         </div>
-        <div style={{ width: "40%" }}>
+        <div style={{ width: "40%" }} data-aos="fade-down-right">
           <p style={{ textAlign: "justify" }}>
             Mindfulness is one effective way to decrease stress by helping you
             stay present in the moment. If you’re looking to improve your own
@@ -126,7 +77,9 @@ export const NatureSound = () => {
       {/* Video2 */}
       <div
         style={{
-          margin: "50px 50px",
+          width: "80%",
+          margin: "50px auto",
+          // border: "1px solid black",
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",
@@ -156,7 +109,9 @@ export const NatureSound = () => {
       {/* Video3 */}
       <div
         style={{
-          margin: "50px 50px",
+          width: "80%",
+          margin: "50px auto",
+          // border: "1px solid black",
           display: "flex",
           justifyContent: "space-around",
           alignItems: "center",

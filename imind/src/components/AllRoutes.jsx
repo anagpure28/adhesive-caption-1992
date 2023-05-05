@@ -4,6 +4,7 @@ import { HomePage } from "../pages/HomePage";
 import Blog from "../pages/Blog";
 import RelaxMusicPage from '../pages/RelaxMusicPage';
 import { NatureSound } from "../pages/NatureSound";
+import PremiumOfferPage from "../pages/PremiumOfferPage";
 
 export const AllRoutes = () => {
   return (
@@ -12,6 +13,7 @@ export const AllRoutes = () => {
       <Route path="/blog" element={<Blog />} />
       <Route path='/relax-music' element={<RelaxMusicPage />} />
       <Route path='/nature-sound' element={<NatureSound />} />
+      <Route path='/premium' element={<PremiumOfferPage />} />
     </Routes>
   );
 };
