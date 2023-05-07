@@ -9,7 +9,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["Anxiety", "Mental Health"],
+        "category": "Anxiety",
         "quote": "Anxiety is like a rocking chair. It gives you something to do, but it doesn't get you very far.",
         "youtube": "https://www.youtube.com/watch?v=WWloIAQpMcQ",
         "id": "1"
@@ -22,7 +22,7 @@ let api = [
         "author": "Jane Doe",
         "view": 0,
         "like": 0,
-        "category": ["Depression", "Mental Health"],
+        "category": "Depression",
         "quote": "The only way out of the darkness is to embrace the light.",
         "youtube": "https://www.youtube.com/watch?v=LLxFu0g87ko",
         "id": "2"
@@ -35,7 +35,7 @@ let api = [
         "author": "Alex Lee",
         "view": 0,
         "like": 0,
-        "category": ["Stress", "Mental Health"],
+        "category": "Stress",
         "quote": "Stress is not what happens to us. It's our response to what happens. And response is something we can choose.",
         "youtube": "https://www.youtube.com/watch?v=TYWI929nZKg",
         "id": "3"
@@ -48,7 +48,7 @@ let api = [
         "author": "Sara Johnson",
         "view": 0,
         "like": 0,
-        "category": ["Mindfulness", "Mental Health"],
+        "category": "Mental Health",
         "quote": "Mindfulness is a way of befriending ourselves and our experience.",
         "youtube": "https://www.youtube.com/watch?v=NEMUDaLMWJ8",
         "id": "4"
@@ -62,7 +62,7 @@ let api = [
         "author": "Mike Brown",
         "view": 0,
         "like": 0,
-        "category": ["Yoga", "Mental Health"],
+        "category": "Yoga",
         "quote": "Yoga is not about touching your toes, it's about what you learn on the way down.",
         "youtube": "https://www.youtube.com/watch?v=T4nr4t0AQzw",
         "id": "5"
@@ -76,7 +76,7 @@ let api = [
         "author": "Sarah Smith",
         "view": 0,
         "like": 0,
-        "category": ["Self-Care", "Mental Health"],
+        "category": "Self-Care",
         "quote": "Self-care is not selfish. You cannot serve from an empty vessel.",
         "youtube": "https://www.youtube.com/watch?v=Eupk56SG76M",
         "id": "6"
@@ -91,7 +91,7 @@ let api = [
         "author": "John Davis",
         "view": 0,
         "like": 0,
-        "category": ["Sleep", "Mental Health"],
+        "category": "Mental Health",
         "quote": "Sleep is the golden chain that ties health and our bodies together.",
         "youtube": "https://www.youtube.com/watch?v=236eHGCSPvI",
         "id": "7"
@@ -105,7 +105,7 @@ let api = [
         "author": "Jane Green",
         "view": 0,
         "like": 0,
-        "category": ["Grief", "Mental Health"],
+        "category": "Grief",
         "quote": "Grief is not a disorder, a disease or a sign of weakness. It is an emotional, physical and spiritual necessity, the price you pay for love. The only cure for grief is to grieve.",
         "youtube": "https://www.youtube.com/watch?v=Jl7axuIeVxI",
         "id": "8"
@@ -117,7 +117,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["Resilience", "Mental Health"],
+        "category": "Resilience",
         "quote": "The oak fought the wind and was broken, the willow bent when it must and survived.",
         "youtube": "https://www.youtube.com/watch?v=1r8hj72bfGo",
         "id": "9"
@@ -131,7 +131,7 @@ let api = [
         "author": "Sarah Jones",
         "view": 0,
         "like": 0,
-        "category": ["Self-Talk", "Mental Health"],
+        "category": "Self-Talk",
         "quote": "Be kind to yourself, because there is no limit to how many times you can start over and begin again.",
         "youtube": "https://www.youtube.com/watch?v=yWDo-y-tK7k",
         "id": "10"
@@ -145,7 +145,7 @@ let api = [
         "author": "Lisa Kim",
         "view": 0,
         "like": 0,
-        "category": ["Nutrition", "Mental Health"],
+        "category": "Mental Health",
         "quote": "The food you eat can be either the safest and most powerful form of medicine, or the slowest form of poison.",
         "youtube": "https://www.youtube.com/watch?v=fhzn3IC7cc0",
         "id": "11"
@@ -158,7 +158,7 @@ let api = [
         "author": "Emily Jones",
         "view": 0,
         "like": 0,
-        "category": ["Anxiety", "Mental Health"],
+        "category": "Mental Health",
         "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
         "youtube": "https://www.youtube.com/watch?v=pLBZGxuimOU",
         "id": "12"
@@ -172,7 +172,7 @@ let api = [
         "author": "Sarah Lee",
         "view": 0,
         "like": 0,
-        "category": ["Perfectionism", "Mental Health"],
+        "category": "Perfectionism",
         "quote": "Perfectionism is self-abuse of the highest order.",
         "youtube": "https://www.youtube.com/watch?v=mrhvsQRKVUU",
         "id": "13"
@@ -187,7 +187,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["Mind-Body Connection", "Mental Health"],
+        "category": "Mental Health",
         "quote": "The body is your temple. Keep it pure and clean for the soul to reside in.",
         "youtube": "https://www.youtube.com/watch?v=c3kznC9m3Nc",
         "id": "14"
@@ -199,7 +199,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["Anxiety", "Mental Health"],
+        "category": "Anxiety",
         "quote": "Panic attacks are not a sign of weakness. They are a sign of trying to remain strong for too long.",
         "youtube": "https://www.youtube.com/watch?v=EUhQ8h9IzF8",
         "id": "15"
@@ -214,7 +214,7 @@ let api = [
         "author": "Maria Rodriguez",
         "view": 0,
         "like": 0,
-        "category": ["Exercise", "Mental Health"],
+        "category": "Exercise",
         "quote": "Exercise is medicine for the mind.",
         "youtube": "https://www.youtube.com/watch?v=TrjEU97AeQ0",
         "id": "16"
@@ -229,7 +229,7 @@ let api = [
         "author": "Lisa Johnson",
         "view": 0,
         "like": 0,
-        "category": ["Trauma", "Mental Health"],
+        "category": "Trauma",
         "quote": "Trauma is personal. It does not disappear if it is not validated. When it is ignored or invalidated the silent screams continue internally heard only by the one held captive.",
         "youtube": "https://www.youtube.com/watch?v=5bJjyrB156U",
         "id": "17"
@@ -241,7 +241,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["OCD", "Mental Health"],
+        "category": "Mental Health",
         "quote": "Obsessive-compulsive disorder (OCD) is a disorder of uncertainty. It's the fear of the unknown. If you're able to embrace the unknown, then you're able to embrace life.",
         "youtube": "https://www.youtube.com/watch?v=xzAntzcPgPk",
         "id": "18"
@@ -253,7 +253,7 @@ let api = [
         "author": "Samantha Lee",
         "view": 0,
         "like": 0,
-        "category": ["Anger", "Frustration", "Mental Health"],
+        "category": "Anger",
         "quote": "The greatest remedy for anger is delay.",
         "youtube": "https://www.youtube.com/watch?v=JwsPProhb5E",
         "id": "19"
@@ -265,7 +265,7 @@ let api = [
         "author": "Emily Jones",
         "view": 0,
         "like": 0,
-        "category": ["SAD", "Mental Health"],
+        "category": "SAD",
         "quote": "The sun himself is weak when he first rises, and gathers strength and courage as the day gets on.",
         "youtube": "https://www.youtube.com/watch?v=RgG5Kdcjeg0",
         "id": "20"
@@ -279,7 +279,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["Work-Life Balance", "Mental Health"],
+        "category": "Mental Health",
         "quote": "A true balance between work and life comes with knowing that your life activities are integrated, not separated.",
         "youtube": "https://www.youtube.com/watch?v=O0yxJH2i0DE",
         "id": "21"
@@ -294,7 +294,7 @@ let api = [
         "author": "Sarah Lee",
         "view": 0,
         "like": 0,
-        "category": ["Technology", "Mental Health"],
+        "category": "Mental Health",
         "quote": "Technology can be both a wonderful tool and a dangerous weapon. It's up to us to decide how we use it.",
         "youtube": "https://www.youtube.com/watch?v=TYX8B122EmU",
         "id": "22"
@@ -309,7 +309,7 @@ let api = [
         "author": "Emma Brown",
         "view": 0,
         "like": 0,
-        "category": ["Phobias", "Mental Health"],
+        "category": "Phobias",
         "quote": "The only way to overcome fear is to face it head-on.",
         "youtube": "https://www.youtube.com/watch?v=CPdBWXiRTaI",
         "id": "23"
@@ -321,7 +321,7 @@ let api = [
         "author": "Maria Rodriguez",
         "view": 0,
         "like": 0,
-        "category": ["Art Therapy", "Mental Health"],
+        "category": "Art Therapy",
         "quote": "Art washes away from the soul the dust of everyday life.",
         "youtube": "https://www.youtube.com/watch?v=KwJp1q6nFdA",
         "id": "24"
@@ -333,7 +333,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["Time Management", "Mental Health"],
+        "category": "Time Management",
         "quote": "Time is a created thing. To say 'I don't have time,' is like saying, 'I don't want to.'",
         "youtube": "https://www.youtube.com/watch?v=rkZl2gsLUp4",
         "id": "25"
@@ -345,7 +345,7 @@ let api = [
         "author": "Jennifer Lee",
         "view": 0,
         "like": 0,
-        "category": ["Relationships", "Mental Health"],
+        "category": "Relationships",
         "quote": "The quality of your life is the quality of your relationships.",
         "youtube": "https://www.youtube.com/watch?v=r9lFenq9L6A",
         "id": "26"
@@ -357,7 +357,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["PTSD", "Mental Health"],
+        "category": "PTSD",
         "quote": "Healing takes courage, and we all have courage, even if we have to dig a little to find it.",
         "youtube": "https://www.youtube.com/watch?v=8e6yF7A5ut4",
         "id": "27"
@@ -371,7 +371,7 @@ let api = [
         "author": "Samantha Jones",
         "view": 0,
         "like": 0,
-        "category": ["Addiction", "Mental Health"],
+        "category": "Addiction",
         "quote": "Addiction begins with the hope that something 'out there' can instantly fill up the emptiness inside.",
         "youtube": "https://www.youtube.com/watch?v=m8JjuyRIxOg",
         "id": "28"
@@ -384,7 +384,7 @@ let api = [
         "author": "Emily Davis",
         "view": 0,
         "like": 0,
-        "category": ["Nature", "Mental Health"],
+        "category": "Nature",
         "quote": "In every walk with nature, one receives far more than he seeks.",
         "youtube": "https://www.youtube.com/watch?v=CL-jYOndc-4",
         "id": "29"
@@ -396,7 +396,7 @@ let api = [
         "author": "Lisa Chen",
         "view": 0,
         "like": 0,
-        "category": ["Boundaries", "Mental Health"],
+        "category": "Mental Health",
         "quote": "Boundaries are a part of self-care. They are healthy, normal, and necessary.",
         "youtube": "https://www.youtube.com/watch?v=Gf4FIt5DG4g",
         "id": "30"
@@ -409,7 +409,7 @@ let api = [
         "author": "David Lee",
         "view": 0,
         "like": 0,
-        "category": ["Financial Stress", "Mental Health"],
+        "category": "Mental Health",
         "quote": "Financial stress can take a toll on mental health. It's important to take steps to manage your finances and seek help if needed.",
         "youtube": "https://www.youtube.com/watch?v=B8QUg0PNG_Y",
         "id": "31"
@@ -422,7 +422,7 @@ let api = [
         "author": "Emily Kim",
         "view": 0,
         "like": 0,
-        "category": ["Eating Disorders", "Mental Health"],
+        "category": "Eating Disorders",
         "quote": "Recovery from an eating disorder is a journey, but it's a journey worth taking. You are worth fighting for.",
         "youtube": "https://www.youtube.com/watch?v=ghx8tNmEVKs",
         "id": "32"
@@ -434,7 +434,7 @@ let api = [
         "author": "John Smith",
         "view": 0,
         "like": 0,
-        "category": ["Productivity", "Mental Health"],
+        "category": "Productivity",
         "quote": "The best way to get something done is to begin.",
         "youtube": "https://www.youtube.com/watch?v=sJ5RnyAokL0",
         "id": "33"
@@ -447,7 +447,7 @@ let api = [
         "author": "Emily Jones",
         "view": 0,
         "like": 0,
-        "category": ["Self-Esteem", "Mental Health"],
+        "category": "Mental Health",
         "quote": "To love oneself is the beginning of a lifelong romance.",
         "youtube": "https://www.youtube.com/watch?v=n6RykDDJzso",
         "id": "34"
@@ -460,10 +460,30 @@ let api = [
         "author": "Sarah Lee",
         "view": 0,
         "like": 0,
-        "category": ["Journaling", "Mental Health"],
+        "category": "Journaling",
         "quote": "Journal writing, when it becomes a ritual for transformation, is not only life-changing but life-expanding.",
         "youtube": "https://www.youtube.com/watch?v=QFcD-_Nx3qY",
         "id": "35"
+    }, {
+        "id": "36",
+        "title": "Bipolar Disorder",
+        "description": "A disorder associated with episodes of mood swings ranging from depressive lows to manic highs.",
+        "details": "Bipolar disorder (formerly called manic-depressive illness or manic depression) is a mental illness that causes unusual shifts in a person's mood, energy, activity levels, and concentration. These shifts can make it difficult to carry out day-to-day tasks. There are three types of bipolar disorder. The exact cause of bipolar disorder isn’t known, but a combination of genetics, environment and altered brain structure and chemistry may play a role.\nManic episodes may include symptoms such as high energy, reduced need for sleep and loss of touch with reality.",
+        "image": "https://www.ourweekly.com/content/images/wp-content/uploads/2022/09/image-56.jpg",
+        "author": "Kay Redfield Jamison",
+        "category": "Disorder",
+        "view": 16,
+        "like": 2,
+        "youtube": "https://www.youtube.com/watch?v=G9vkGCo7Gtg",
+        "quote": "I hate when I tell someone I have bipolar and see a look of terror in their eyes."
     }
 
 ]
+
+
+// let arr = [];
+// for (let i = 0; i <= api.length - 1; i++) {
+//     if (arr.includes(api[i].category)) { }
+//     else { arr.push(api[i].category) }
+// }
+// console.log(arr)

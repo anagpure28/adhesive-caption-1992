@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { FaExclamationCircle } from "react-icons/fa";
+import { FaExclamationCircle, FaEye, FaThumbsUp } from "react-icons/fa";
 import axios from "axios";
 import {
   Box,
@@ -30,13 +30,14 @@ const SingleBlogPage = () => {
     axios
       .get(`https://6453bfbdc18adbbdfea68ba0.mockapi.io/recovery/${id}`)
       .then((res) => {
+        let x = Number(res.data.view);
         setApiResponse(res.data);
         setLoading(false);
         axios.put(
           `https://6453bfbdc18adbbdfea68ba0.mockapi.io/recovery/${id}`,
           {
             ...res.data,
-            view: res.data.view + 1, // Increase the view count by 1
+            view: x + 1, // Increase the view count by 1
           }
         );
       })
@@ -48,11 +49,12 @@ const SingleBlogPage = () => {
 
   const handleLike = () => {
     // setLike((prev) => prev + 1);
+    let x = Number(apiResponse.like);
     setLike(true);
     axios
       .put(`https://6453bfbdc18adbbdfea68ba0.mockapi.io/recovery/${id}`, {
         ...apiResponse,
-        like: apiResponse.like + 1, // Increase the view count by 1
+        like: x + 1, // Increase the view count by 1
       })
       .then((res) => {
         setApiResponse(res.data);
@@ -175,16 +177,17 @@ const SingleBlogPage = () => {
             mt={8}
           >
             <Button
-              colorScheme="yellow"
+              color="yellow.300"
               variant="ghost"
-              leftIcon={<FaPlay />}
+              leftIcon={<FaEye />}
               fontSize="md"
+              border="1px solid yellow"
             >
               {apiResponse.view} Views
             </Button>
             <Button
               colorScheme="yellow"
-              leftIcon={<FaPlay />}
+              leftIcon={<FaThumbsUp />}
               fontSize="md"
               onClick={handleLike}
             >

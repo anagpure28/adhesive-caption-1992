@@ -72,17 +72,7 @@ export const BlogCard = ({
           p="5px"
           borderRadius="10px"
         >
-          {category[0]}
-        </Text>
-        <Text
-          marginBottom="10px"
-          bgColor="yellow.400"
-          color="black"
-          fontWeight="medium"
-          p="5px"
-          borderRadius="10px"
-        >
-          {category[1]}
+          {category}
         </Text>
       </Flex>
       <Link
