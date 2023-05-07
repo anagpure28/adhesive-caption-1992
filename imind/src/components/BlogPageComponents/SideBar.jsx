@@ -1,112 +1,111 @@
-import { useState } from "react";
-import { Box, Text, List, ListItem, Checkbox } from "@chakra-ui/react";
-import { MdViewList } from "react-icons/md";
+import { useContext, useState } from "react";
+import {
+  Box,
+  Button,
+  Checkbox,
+  Collapse,
+  Flex,
+  Icon,
+  Text,
+} from "@chakra-ui/react";
+import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { useLocation, useNavigate } from "react-router-dom";
+import { ApiResponseContext } from "../../AppWrapper";
 
 const colorsTheme = ["#fce505", "#242424", "#fcfcfc"];
 
-function Sidebar() {
-  const [collapsed, setCollapsed] = useState(true);
-  const [checkedItems, setCheckedItems] = useState(new Set());
+const Sidebar = () => {
+  const [apiResponse, setApiResponse] = useContext(ApiResponseContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedIssues, setSelectedIssues] = useState([]);
 
-  const handleCheckboxChange = (event) => {
-    const label = event.target.name;
-    const isChecked = event.target.checked;
-
-    if (isChecked) {
-      setCheckedItems(new Set(checkedItems).add(label));
-    } else {
-      const newCheckedItems = new Set(checkedItems);
-      newCheckedItems.delete(label);
-      setCheckedItems(newCheckedItems);
-    }
+  const toggleIssues = () => {
+    setIsOpen(!isOpen);
   };
 
-  const allIssues = [
-    "Anxiety",
-    "Mental Health",
-    "Depression",
-    "Stress",
-    "Mindfulness",
-    "Yoga",
-    "Self-Care",
-    "Sleep",
-    "Grief",
-    "Resilience",
-    "Self-Talk",
-    "Nutrition",
-    "Perfectionism",
-    "Mind-Body Connection",
-    "Exercise",
-    "Trauma",
-    "OCD",
-    "Anger",
-    "Frustration",
-    "SAD",
-    "Work-Life Balance",
-    "Technology",
-    "Phobias",
-    "Art Therapy",
-    "Time Management",
-    "Relationships",
-    "PTSD",
-    "Addiction",
-    "Nature",
-    "Boundaries",
-    "Financial Stress",
-    "Eating Disorders",
-    "Productivity",
-    "Self-Esteem",
-    "Journaling",
-  ];
+  const handleCheckboxChange = async (event) => {
+    const { checked, value } = event.target;
+    const newSelectedIssues = checked
+      ? [...selectedIssues, value]
+      : selectedIssues.filter((issue) => issue !== value);
+    setSelectedIssues(newSelectedIssues);
 
-  const visibleIssues = allIssues.slice(0, 6);
+    const params =
+      newSelectedIssues.length > 0
+        ? `category=${newSelectedIssues.join("&category=")}`
+        : "";
+    const response = await fetch(
+      `https://6453bfbdc18adbbdfea68ba0.mockapi.io/recovery?${params}`
+    );
+    const data = await response.json();
+    setApiResponse(data);
+
+    navigate({
+      pathname: location.pathname,
+      search: params,
+    });
+  };
+
+  const getCheckboxProps = (issue) => {
+    const isChecked = selectedIssues.includes(issue);
+    return {
+      isChecked,
+      onChange: handleCheckboxChange,
+      value: issue,
+      colorScheme: isChecked ? "yellow" : undefined,
+    };
+  };
+
+  const issuesToShow = isOpen
+    ? [
+        "Perfectionism",
+        "Exercise",
+        "Trauma",
+        "Anger",
+        "SAD",
+        "Phobias",
+        "Art Therapy",
+        "Time Management",
+        "Relationships",
+        "PTSD",
+        "Addiction",
+        "Nature",
+        "Eating Disorders",
+        "Productivity",
+        "Journaling",
+        "Disorder",
+      ]
+    : ["Anxiety", "Depression", "Stress", "Mental Health", "Yoga", "Self-Care"];
 
   return (
-    <Box
-      bg={colorsTheme[1]}
-      color={colorsTheme[0]}
-      width={["30%", "35%", "30%"]}
-      p={8}
-    >
-      <Text fontSize="lg" fontWeight="bold" mb={8}>
-        Latest Posts
-      </Text>
-      <Text mb={2} cursor="pointer" onClick={() => setCollapsed(!collapsed)}>
-        {collapsed ? "Filter Blog by Issues ▼" : "Hide Issues ▲"}
-      </Text>
-      <List spacing={3}>
-        {visibleIssues.map((issue) => (
-          <ListItem key={issue}>
-            <Checkbox
-              name={issue}
-              onChange={handleCheckboxChange}
-              colorScheme="yellow"
-            >
-              {issue}
-            </Checkbox>
-          </ListItem>
+    <Box bg={colorsTheme[1]} w="30%" minH="100vh" p={4}>
+      <Flex alignItems="center" mb={4} cursor="pointer" onClick={toggleIssues}>
+        <Icon color="yellow" as={isOpen ? ChevronDownIcon : ChevronRightIcon} />
+        <Text ml={2} color={colorsTheme[0]} fontSize="xl" fontWeight="bold">
+          Filter Blog by Issues
+        </Text>
+      </Flex>
+      <Flex mb={4} direction="column">
+        {issuesToShow.map((issue) => (
+          <Checkbox
+            color={colorsTheme[0]}
+            key={issue}
+            {...getCheckboxProps(issue)}
+            mb={2}
+          >
+            {issue}
+          </Checkbox>
         ))}
-        {!collapsed &&
-          allIssues.slice(6).map((issue) => (
-            <ListItem key={issue}>
-              <Checkbox
-                name={issue}
-                onChange={handleCheckboxChange}
-                colorScheme="yellow"
-              >
-                {issue}
-              </Checkbox>
-            </ListItem>
-          ))}
-        {!collapsed && (
-          <ListItem cursor="pointer" onClick={() => setCollapsed(!collapsed)}>
-            <Text>Hide Issues ▲</Text>
-            <MdViewList color={colorsTheme[1]} />
-          </ListItem>
-        )}
-      </List>
+      </Flex>
+      {!isOpen && (
+        <Button size="sm" onClick={toggleIssues}>
+          Show More
+        </Button>
+      )}
     </Box>
   );
-}
+};
 
 export default Sidebar;

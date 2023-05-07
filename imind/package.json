@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "axios": "^1.4.0",
+    "formik": "^2.2.9",
     "framer-motion": "^10.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,11 +26,13 @@
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "react-spring": "^9.7.1",
     "react-video-js-player": "^1.1.1",
     "redux": "^4.2.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.10",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
