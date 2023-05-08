@@ -7,14 +7,18 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
 import AppWrapper from "./AppWrapper";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <StyledEngineProvider>
-      <ChakraProvider>
-        <AppWrapper />
-      </ChakraProvider>
+      <Provider store={store}>
+        <ChakraProvider>
+          <AppWrapper />
+        </ChakraProvider>
+      </Provider>
     </StyledEngineProvider>
   </BrowserRouter>
 );

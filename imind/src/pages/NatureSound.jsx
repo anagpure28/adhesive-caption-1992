@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import VideoPlayer from "react-video-js-player";
 import N1 from "../Videos/N1.mp4";
 import N2 from "../Videos/N2.mp4";
@@ -8,6 +8,8 @@ import Carousel3 from "../list_cards/Carousel3";
 import { NatureArr1, NatureArr2, cards3, cards4 } from "../data_Arrays/data";
 import ReactPlayer from "react-player"
 import { FeatureStory } from "../list_cards/FeatureStory";
+import VideoCard from "../../src/list_cards/VideoCard";
+import VideoCard2 from "../../src/list_cards/VideoCard2";
 
 export const NatureSound = () => {
   const videoSrc1 = N1;
@@ -19,6 +21,7 @@ export const NatureSound = () => {
   const videoSrc3 = N3;
   const poster3 =
     "https://images.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg?cs=srgb&dl=pexels-pixabay-36478.jpg&fm=jpg";
+  
 
   return (
     <div>
@@ -143,6 +146,10 @@ export const NatureSound = () => {
       <FeatureStory data={NatureArr1} title={"Featured Videos"}/>
       <FeatureStory data={NatureArr2} title={"Featured Blogs"}/>
       <Carousel3 data={cards4} title={"Nature Vibes"}/>
+      <VideoCard />
+      <VideoCard2 />
+      <FeatureStory data={NatureArr2} title={"Featured Blogs"}/>
+      <FeatureStory data={NatureArr1} title={"Featured Videos"}/>
       <br />
     </div>
   );
