@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+## RECOVERY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that provides educational content and resources related to mental health. The application includes articles on various topics such as anxiety and depression, along with videos and other resources that can be helpful for people seeking information about these conditions.
+In addition to providing educational content, the web application also features a forum where users can connect with each other and share their experiences related to mental health. This forum creates a supportive community where users can find comfort and advice from others who may be going through similar experiences.
 
-## Available Scripts
+Overall, the goal of this web application is to provide a safe and supportive space for individuals seeking information and resources related to mental health. It strives to reduce the stigma surrounding mental illness and promote mental health awareness and wellness.
 
-In the project directory, you can run:
+- Tech Stack
 
-### `npm start`
+Frontend: HTML, CSS, JavaScript, React
+Backend: Node.js,
+Database: MockAPI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Dependencies
+  React: ^17.0.2
+  react-dom: ^17.0.2
+  react-router-dom: ^5.2.0
+  dotenv: ^10.0.0
+  Getting Started
+  Clone the repository
+  Install the dependencies: npm install
+  Start the server: npm start
+  Open the app in your browser: http://localhost:3000
+  Screenshots
+  Screenshot of Recovery App Home Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Screenshot of Recovery App Progress Tracker
 
-### `npm test`
+Contributing
+Contributions are welcome! If you have any ideas, feel free to open an issue or submit a pull request.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Find local support groups and meetings
+- Access a directory of treatment centers and facilities
+- Connect with certified addiction counselors
+- Read articles and personal stories from others in recovery
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Use
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Visit [Recovery](https://www.recovery.com).
+2. Use the search bar to find local resources or browse the directory.
+3. Create an account to access additional features, such as the ability to connect with addiction counselors and participate in online support groups.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About the Team
 
-### `npm run eject`
+Recovery was founded by a group of individuals passionate about supporting those in addiction recovery. Our team includes certified addiction counselors, social workers, and individuals in recovery themselves.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact Us
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or feedback, please email us at info@recovery.com.
