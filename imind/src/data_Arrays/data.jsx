@@ -74,6 +74,37 @@ export const featureArr = [
     },
   ]
 
+export const featureArr2 = [
+    {
+      id: 1,
+      image: "https://www.insightsonindia.com/wp-content/uploads/2021/06/stattistics.jpg",
+      date: "18 May 2013",
+      text: "According to the WHO, there is a 10-25-year life expectancy reduction in patients with severe mental disorders.",
+      link: "https://www.insightsonindia.com/2021/06/09/insights-into-editorial-towards-a-stronger-mental-health-strategy/"
+    },
+    {
+      id: 2,
+      image: "https://www.jatinverma.org/wp-content/uploads/2019/10/26.png",
+      date: "12 January 2013",
+      text: "The statistical report published by the World Health Organization (WHO) recently...",
+      link: "https://www.jatinverma.org/access-to-mental-health-disorders"
+    },
+    {
+      id: 3,
+      image: "https://images.indianexpress.com/2021/10/GettyImages-mental-health-1200.jpg",
+      date: "08 May 2000",
+      text: "Only 41 per cent of young Indians seek support for mental health problems: UNICEF | Parenting News...",
+      link: "https://indianexpress.com/article/parenting/health-fitness/only-41-per-cent-of-young-indians-seek-support-for-mental-health-problems-unicef-7556064/"
+    },
+    {
+      id: 4,
+      image: "https://www.gilliankeegan.com/sites/www.gilliankeegan.com/files/2019-04/Chi%20Observer%2028th%20March-1.jpg",
+      date: "19 December 2008",
+      text: "It's important to talk about mental health - Chichester Observer | Gillian Keegan",
+      link: "https://www.gilliankeegan.com/news/its-important-talk-about-mental-health-chichester-observer"
+    },
+  ]
+
 export const NatureArr1 = [
     {
       id: 1,

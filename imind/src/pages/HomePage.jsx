@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FeatureStory } from "../list_cards/FeatureStory";
 import Carousel from "../list_cards/Carousel";
 import Carousel2 from "../list_cards/Carousel2";
-import { cards1, cards2, featureArr } from "../data_Arrays/data";
+import { cards1, cards2, featureArr, featureArr2 } from "../data_Arrays/data";
 
 export const HomePage = () => {
   const [text, setText] = useState("");
@@ -66,6 +66,7 @@ export const HomePage = () => {
       <Carousel data={cards1} title={"Mental Health Problems"} />
       <FeatureStory data={featureArr} title={"Featured Videos"} />
       <Carousel2 data={cards2} title={"Mental Health Issues"} />
+      <FeatureStory data={featureArr2} title={"Featured Papers"} />
     </div>
   );
 };

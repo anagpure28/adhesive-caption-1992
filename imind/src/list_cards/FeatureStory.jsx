@@ -9,6 +9,7 @@ export const FeatureStory = ({data, title}) => {
     <DIV>
       <div className='p'>
         <p>{title}</p>
+        <p>See All</p>
       </div>
       <div className='grid'>
         {arr.length > 0 && arr.map((el,i)=> {
@@ -29,8 +30,20 @@ const DIV = styled.div`
   }
   .p{
     text-align: left;
+    width: 90%;
     margin: 1% 0 1% 5%;
-    font-size: 25px;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .p > p:nth-child(1){
+    font-size: 25px;
+  }
+  .p > p:nth-child(2){
+    font-size: 18px;
+    margin-top: 10px;
+    text-decoration: underline;
+    cursor: pointer;
   }
 `
