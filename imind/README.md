@@ -5,6 +5,8 @@ In addition to providing educational content, the web application also features 
 
 Overall, the goal of this web application is to provide a safe and supportive space for individuals seeking information and resources related to mental health. It strives to reduce the stigma surrounding mental illness and promote mental health awareness and wellness.
 
+#Deployed Link: https://imind.vercel.app/
+
 - Tech Stack
 
 Frontend: HTML, CSS, JavaScript, React
