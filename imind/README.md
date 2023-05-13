@@ -10,6 +10,8 @@ Overall, the goal of this web application is to provide a safe and supportive sp
 ##Home Page
 ![image](https://github.com/anagpure28/adhesive-caption-1992/assets/92313981/808dff33-a551-4309-9537-7fbea0e04ea8)
 
+##Admin Page
+![image](https://github.com/anagpure28/adhesive-caption-1992/assets/92313981/1a031be2-2956-40ff-a7ca-3fcad46f0795)
 
 - Tech Stack
 
